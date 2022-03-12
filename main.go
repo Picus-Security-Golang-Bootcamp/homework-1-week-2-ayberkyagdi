@@ -14,11 +14,13 @@ type BookItem struct {
 	Name, Author, Date string
 }
 
+// AddItem appends an instance of bookitem to books struct
 func (b *Books) AddItem(item BookItem) []BookItem {
 	b.Items = append(b.Items, item)
 	return b.Items
 }
 
+// FindItem searches an bookitem with a specific name inside Books struct
 func (b *Books) FindItem(s string) BookItem {
 	item := BookItem{}
 	for i := range b.Items {
@@ -30,6 +32,7 @@ func (b *Books) FindItem(s string) BookItem {
 	return item
 }
 
+// ListItems lists all book_items with a pretty print format(visualized with empty spaces)
 func (b *Books) ListItems() {
 	column_length := 50
 	empty_string := strings.Repeat("\t", 6)
