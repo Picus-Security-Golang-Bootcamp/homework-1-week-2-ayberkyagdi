@@ -35,7 +35,7 @@ func (b *Books) ListItems() {
 	empty_string := strings.Repeat("\t", 6)
 	fmt.Printf("\tNAME%sAUTHOR%sDATE\n", empty_string, empty_string)
 	for index, book := range b.Items {
-		fmt.Printf("%d %s", index, book.Name)
+		fmt.Printf("%d %s", index+1, book.Name)
 		fmt.Printf("%s", strings.Repeat(" ", column_length-len(book.Name)))
 		fmt.Printf("%s", book.Author)
 		fmt.Printf("%s", strings.Repeat(" ", column_length-len(book.Author)))
