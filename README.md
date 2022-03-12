@@ -14,10 +14,12 @@ This application has 2 tasks.
 ```
 go run main.go list
 ```
-With this command, we want to see all the books in the application as output.
+With **list** command, we want to see all the books in the application as output.
 
 ### search command 
 ```
 go run main.go search <bookName>
 go run main.go search War and Peace
 ```
+
+With **search** command, we are checking the book exist or not in the book list.
