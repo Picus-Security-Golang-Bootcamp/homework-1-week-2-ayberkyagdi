@@ -1,17 +1,23 @@
 ## Homework | Week 2
 
-Elimizde bir kitap listesi var. Bu uygulamanın 2 görevi var.
-1. Uygulama içerisindeki tüm kitapları çıktı olarak göstermek.
-2. Girdi olarak verilen kitap ismini varsa ekrana bastırmak yok ise kitabın mevcut olmadığına dair çıktı yazdırmak.
+We have a list of books.
+List of books (Name | Author | Date)
+<img width="495" alt="ss_img" src="https://user-images.githubusercontent.com/93559950/158012552-109136a9-6f45-48bf-b46f-daa4f0c584a4.png">
+
+This application has 2 tasks.
+
+1. To show all the books in the application as output.
+2. If there is a book name given as an input, printing it on the screen, if not, printing an output stating that the book does not exist.
 
 <img width="495" alt="ss_img" src="https://user-images.githubusercontent.com/93559950/158012552-109136a9-6f45-48bf-b46f-daa4f0c584a4.png">
 ### list command
 ```
 go run main.go list
 ```
-Bu komut ile uygulama içerisindeki tüm kitapları çıktı olarak görmek istiyoruz.
+With this command, we want to see all the books in the application as output.
 
 ### search command 
 ```
 go run main.go search <bookName>
-go run main.go search Lord of the Ring: The Return of 
+go run main.go search War and Peace
+```
